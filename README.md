@@ -71,6 +71,7 @@ VALUES
 ('Jane Smith', '9123456780', 'jane@example.com');
 ```
 ## Insert sample policies
+```sql
 INSERT INTO policy (policy_type, premium, customer_id)
 VALUES 
 ('Life Insurance', 12000.00, 1),
