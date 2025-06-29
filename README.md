@@ -19,7 +19,7 @@
 ### 🧾 Table: customer
 | Column  | Data Type    | Constraints                  | Description                 |
 | ------- | ------------ | ---------------------------- | --------------------------- |
-| id      | INT          | PRIMARY KEY, AUTO\_INCREMENT | Unique ID for each customer |
+| id      | INT          | PRIMARY KEY, AUTO_INCREMENT | Unique ID for each customer |
 | name    | VARCHAR(100) | NOT NULL                     | Full name of the customer   |
 | contact | VARCHAR(20)  |                              | Mobile number               |
 | email   | VARCHAR(100) |                              | Email address               |
@@ -36,10 +36,10 @@ CREATE TABLE customer (
 ```sql
 | Column       | Data Type     | Constraints                  | Description                           |
 | ------------ | ------------- | ---------------------------- | ------------------------------------- |
-| id           | INT           | PRIMARY KEY, AUTO\_INCREMENT | Unique ID for each policy             |
-| policy\_type | VARCHAR(50)   | NOT NULL                     | Type of insurance (e.g. Life, Health) |
+| id           | INT           | PRIMARY KEY, AUTO_INCREMENT | Unique ID for each policy             |
+| policy_type | VARCHAR(50)   | NOT NULL                     | Type of insurance (e.g. Life, Health) |
 | premium      | DECIMAL(10,2) | NOT NULL                     | Premium amount                        |
-| customer\_id | INT           | FOREIGN KEY → customer(id)   | References customer table             |
+| customer_id | INT           | FOREIGN KEY → customer(id)   | References customer table             |
 
 ```
 
