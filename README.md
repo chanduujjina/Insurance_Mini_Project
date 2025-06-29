@@ -63,8 +63,8 @@ CREATE TABLE policy (
 - Deleting a customer will also delete all their policies (ON DELETE CASCADE).
 
  ## 🔍 Sample Data Insertion
-  ```sql
-  -- Insert sample customers
+ 
+```sql
 INSERT INTO customer (name, contact, email)
 VALUES 
 ('John Doe', '9876543210', 'john@example.com'),
