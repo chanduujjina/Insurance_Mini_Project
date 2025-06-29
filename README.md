@@ -42,6 +42,17 @@ CREATE TABLE customer (
 | customer_id | INT           | FOREIGN KEY → customer(id)   | References customer table             |
 
 ```
+### 🧾 Create Table: policy
+CREATE TABLE policy (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    policy_type VARCHAR(50) NOT NULL,
+    premium DECIMAL(10, 2) NOT NULL,
+    customer_id INT NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+```
 
 ## 🔁 Relationships
 - Each policy belongs to one customer.
