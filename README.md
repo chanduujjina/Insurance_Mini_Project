@@ -43,3 +43,10 @@ CREATE TABLE customer (
 
 ```
 
+## 🔁 Relationships
+- Each policy belongs to one customer.
+
+- One customer can have multiple policies.
+
+- Deleting a customer will also delete all their policies (ON DELETE CASCADE).
+
