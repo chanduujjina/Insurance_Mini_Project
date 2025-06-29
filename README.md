@@ -43,6 +43,7 @@ CREATE TABLE customer (
 
 ```
 ### 🧾 Create Table: policy
+```sql
 CREATE TABLE policy (
     id INT PRIMARY KEY AUTO_INCREMENT,
     policy_type VARCHAR(50) NOT NULL,
