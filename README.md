@@ -32,5 +32,14 @@ CREATE TABLE customer (
     email VARCHAR(100)
 );
 ```
+### 🧾 Table: policy
+```sql
+| Column       | Data Type     | Constraints                  | Description                           |
+| ------------ | ------------- | ---------------------------- | ------------------------------------- |
+| id           | INT           | PRIMARY KEY, AUTO\_INCREMENT | Unique ID for each policy             |
+| policy\_type | VARCHAR(50)   | NOT NULL                     | Type of insurance (e.g. Life, Health) |
+| premium      | DECIMAL(10,2) | NOT NULL                     | Premium amount                        |
+| customer\_id | INT           | FOREIGN KEY → customer(id)   | References customer table             |
 
+```
 
